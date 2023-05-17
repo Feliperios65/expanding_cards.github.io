@@ -10,11 +10,38 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50rem;
+    height: 75rem;
     overflow: hidden;
     margin: 0;
 }
 .contenedor{
     display: flex;
-    width: 45rem;
-} 
+    width: 140rem;
+}
+.panel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60rem;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    margin: 1rem;
+    position: relative;
+    flex: 0.5;
+    transition: flex 0.7s ease-in;
+}
+.panel h3{
+    font-size: 2.4rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    opacity: 0;
+}
+.panel.active{
+    flex: 5;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0,3s ease-in;
+}
